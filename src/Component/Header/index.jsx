@@ -11,9 +11,9 @@ export default function index() {
             </div>
             <div className={Styles.nav_ul_section}>
                 <ul>
-                   <li><a href="#">Illustrations</a></li>
-                   <li><a href="#">icons</a></li>
-                   <li><a href="#">requests</a></li>
+                   <li><a href="/illustrations">Illustrations</a></li>
+                   <li><a href="/icons">icons</a></li>
+                   <li><a href="/requests">requests</a></li>
                 </ul>
             </div>
         </nav>
