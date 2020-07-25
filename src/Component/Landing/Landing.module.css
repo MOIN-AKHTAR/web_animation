@@ -1,0 +1,84 @@
+.landing{
+    display: flex;
+   position: relative;
+    min-height: 80vh;
+    width: 65%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: -1;
+}
+.landing div img{
+    height: 60vh;
+}
+.landing div h1{
+    font-size: 3.1rem;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 0.2rem;
+}
+.landing div h3{
+    color: rgba(0,0,0,0.5);
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    text-align: left;
+}
+strong{
+    color: #000;
+    font-weight: 900;
+}
+.landing div input[type="email"]{
+    border: 2px solid #CCC;
+    width: 60%;
+    padding: 1rem 0.7rem;
+    border-radius: 0.5rem;
+}
+.landing div input[type="email"]::placeholder{
+    font-size: 1.1rem;
+}
+.landing div input[type="email"] ~ button{
+    margin: 0px 0.8rem;
+    padding: 1rem;
+    background-color: #6cd5e1;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.landing div input[type="email"] ~ button::first-letter{
+    font-size: 1.2rem;
+    text-align: end;
+}
+button:hover{
+    background-color: #ff8364;
+}
+.divider{
+    height: 10px;
+}
+.img_section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: 3rem auto;
+}
+.img_section img{
+    width:18%;
+}
+
+@media (max-width: 800px){
+    .landing{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        padding: 0px 1rem;
+    }
+    
+    .landing div img{
+        width: 100%;
+    }
+}
